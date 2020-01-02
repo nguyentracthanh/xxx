@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".PickImageActivity">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/linearlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_pick_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_50sdp"
+            android:text="Select Image"
+            android:textSize="@dimen/_15sdp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white_f8f9fb" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Upload"
+
+            android:background="@drawable/custom_button_upload"
+            android:layout_height="@dimen/_50sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorBlue" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_image_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_image_path"
+        android:layout_below="@id/linearlay"
+        android:contentDescription="Description"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "991682098861",
+    "firebase_url": "https://testapp-edb45.firebaseio.com",
+    "project_id": "testapp-edb45",
+    "storage_bucket": "testapp-edb45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991682098861:android:2f9882652e09c40f6d3824",
+        "android_client_info": {
+          "package_name": "vn.edu.usth.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991682098861-amf13s1frp5hu1hoo2uk7ijvpn53pcmo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.edu.usth.testapp",
+            "certificate_hash": "2ce63f08a1b5ec8df55704f0c28ae1352b571730"
+          }
+        },
+        {
+          "client_id": "991682098861-jsgqft45a7c3p3sglk1fqj8acehculfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFwltOtKOv5KQbYyzSserRG_nwcGfw-5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991682098861-jsgqft45a7c3p3sglk1fqj8acehculfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

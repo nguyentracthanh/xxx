@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.edu.usth.dropbox">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_dropbox_tilesvg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_dropbox_tilesvg"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+
+        >
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".PickImageActivity"/>
+    <!--        <activity android:name=".View.authen.Signup"></activity>-->
+<!--        <activity-->
+<!--            android:name=".DropboxTest.FilesActivity"-->
+<!--            android:label="@string/title_activity_files" />-->
+        <activity android:name=".View.authen.Login"
+           />
+
+        <activity android:name=".View.authen.Signup"
+            />
+<!--        <activity-->
+<!--            android:name=".View.splash.SplashActivity"-->
+<!--            android:theme="@style/SplashTheme"/>-->
+         <activity
+                android:name=".View.authen.Author">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name="com.dropbox.client2.android.AuthActivity"
+        android:configChanges="orientation|keyboard"
+        android:launchMode="singleTask"
+        >
+        <intent-filter>
+
+            <!-- Change this to be db- followed by your app key -->
+            <!--            thanh=ukpjtnyyuyo07uj-->
+            <data android:scheme="db-corf5oep2795e75" />
+
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+        <activity android:name=".View.home.HomeActivity" />
+    </application>
+
+</manifest>

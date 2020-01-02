@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="vn.edu.usth.dropbox.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/files"
+        android:name="vn.edu.usth.dropbox.ui.files.FilesFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_files" />
+    <fragment
+        android:id="@+id/paper"
+        android:name="vn.edu.usth.dropbox.ui.paper.PaperFragment"
+        android:label="Paper"
+        tools:layout="@layout/fragment_paper" />
+    <fragment
+        android:id="@+id/Notifications"
+        android:name="vn.edu.usth.dropbox.ui.notification.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_noti" />
+
+    <fragment
+        android:id="@+id/Photos"
+        android:name="vn.edu.usth.dropbox.ui.photo.PhotoFragment"
+        android:label="Photo"
+        tools:layout="@layout/fragment_photo" />
+
+    <fragment
+        android:id="@+id/Offline"
+        android:name="vn.edu.usth.dropbox.ui.offline.OfflineFragment"
+        android:label="Offline"
+        tools:layout="@layout/fragment_offline" />
+    <fragment
+        android:id="@+id/Upgrade_account"
+        android:name="vn.edu.usth.dropbox.ui.upgrade_account.UpgradeFragment"
+        android:label="Upgrade Account"
+        tools:layout="@layout/fragment_upgrade" />
+    <fragment
+        android:id="@+id/Settings"
+        android:name="vn.edu.usth.dropbox.ui.setting.SettingFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_setting" />
+
+
+</navigation>
