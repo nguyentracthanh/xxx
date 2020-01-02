@@ -12,31 +12,30 @@
 
 
     <LinearLayout
-        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_15sdp"
         android:id="@+id/linearlay"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/btn_pick_image"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
             android:text="Select Image"
+            android:layout_gravity="center"
             android:textSize="@dimen/_15sdp"
             android:background="@drawable/custom_button"
             android:textColor="@color/white_f8f9fb" />
 
-        <View
-            android:layout_width="50dp"
-            android:layout_height="20dp" />
+
 
         <Button
+            android:layout_marginTop="@dimen/_10sdp"
             android:id="@+id/btn_upload"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:text="Upload"
-
+            android:layout_gravity="center"
             android:background="@drawable/custom_button_upload"
             android:layout_height="@dimen/_50sdp"
             android:textSize="@dimen/_15sdp"
@@ -53,9 +52,10 @@
         android:gravity="center" />
 
     <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
         android:id="@+id/iv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@id/tv_image_path"
         android:layout_below="@id/linearlay"
         android:contentDescription="Description"
